@@ -1,0 +1,87 @@
+:root {
+  --primary: #b89794;
+  --secondary: #f3f1f0;
+  --accent: #4a594a;
+  --background: #e0cfd2;
+  --muted: #b0c3b7;
+  --light: #ebe1e3;
+}
+body {
+  font-family: "Grandstander", sans-serif;
+  background-color: var(--background);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: var(--light);
+  padding: 20px;
+}
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+nav {
+  background-color: var(--primary);
+  padding: 10px;
+}
+
+nav a {
+  color: var(--secondary);
+  font-family: "Authentic Sans", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+.container {
+  padding: 20px;
+}
+h1 {
+  font-size: 36px;
+  color: var(--accent);
+}
+.book-placeholder {
+  width: 300px;
+  height: 300px;
+  background-image: url("images/book-cover1.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 20px auto;
+  border: 2px solid var(--accent);
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.button {
+  background-color: var(--muted);
+  color: var(--accent);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  transition: background 0.3s;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.button:hover {
+  background-color: var(--primary);
+  color: white;
+}
+@media (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
