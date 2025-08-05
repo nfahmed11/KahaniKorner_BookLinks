@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dada Jee Ka Khet - Riddle Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandstander:wght@400;700&family=Authentic+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="game2.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/images/logo.png" alt="Logo" class="logo" />
+    </header>
+    <nav>
+      <a href="../index.html">Back to Dada Jee Ka Khet</a>
+    </nav>
+
+    <div class="container">
+      <div class="title-container">
+        <h1 class="roman">Main Kaun Hoon?</h1>
+        <h1 class="urdu">میں کون ہوں؟</h1>
+        <h1 class="english">Who Am I?</h1>
+      </div>
+
+      <!-- settings container -->
+
+      <div class="settings-container">
+        <div class="settings-header" id="settings-toggle">
+          <span>Settings: <span id="selected-difficulty">Easy</span></span>
+          <span class="arrow">▼</span>
+        </div>
+
+        <div class="settings-dropdown hidden" id="settings-dropdown">
+          <div class="difficulty-section">
+            <label class="difficulty-option">
+              <input
+                type="radio"
+                name="difficulty"
+                id="easy"
+                value="Easy"
+                checked
+              />
+              Easy
+            </label>
+            <label class="difficulty-option">
+              <input
+                type="radio"
+                name="difficulty"
+                id="medium"
+                value="Medium"
+              />
+              Medium
+            </label>
+            <label class="difficulty-option">
+              <input type="radio" name="difficulty" id="hard" value="Hard" />
+              Hard
+            </label>
+          </div>
+
+          <div class="language-section">
+            <label class="language-option">
+              <input type="checkbox" id="romanUrdu" checked /> Roman Urdu
+            </label>
+            <label class="language-option">
+              <input type="checkbox" id="urdu" checked /> اردو
+            </label>
+            <label class="language-option">
+              <input type="checkbox" id="english" checked /> English
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-area">
+        <div class="riddle-container" id="riddle-container">
+          <!-- Riddle will be displayed here dynamically -->
+        </div>
+
+        <div class="drop-zone" id="drop-zone">Select An Answer</div>
+
+        <div class="word-options" id="word-options">
+          <!-- Words will be inserted dynamically -->
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="game2.js"></script>
+  </body>
+</html>
