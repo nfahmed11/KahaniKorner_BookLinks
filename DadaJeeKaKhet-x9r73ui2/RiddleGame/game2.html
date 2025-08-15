@@ -31,15 +31,30 @@
         padding: 0;
       }
 
-      header {
+     header {
+        width: 100%;
         background: linear-gradient(
           135deg,
           var(--primary),
           var(--secondary-bg)
         );
-        padding: 20px;
-        text-align: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
       }
+
+.logo {
+  width: 120px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
 
       nav {
         text-align: center;
@@ -78,6 +93,8 @@
         color: var(--accent);
       }
 
+     
+      
       .settings-container,
       .drop-zone {
         width: 250px;
@@ -339,12 +356,13 @@
   </head>
 
   <body>
-    <header>
-      <img src="../../images/logo.png" alt="Logo" class="logo" />
+      <header>
+      <a href="https://kahanikorner.com/">
+        <img src="/quicklinks/images/logo.png" alt="Kahani Korner Logo" class="logo" />
+      </a>
     </header>
-    <nav>
-      <a href="../index.html">Back to Dada Jee Ka Khet</a>
-    </nav>
+
+      
 
     <div class="container">
       <div class="title-container">

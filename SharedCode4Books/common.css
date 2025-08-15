@@ -21,7 +21,6 @@
 
       header {
         width: 100%;
-        padding: 10px;
         background: linear-gradient(135deg, var(--rosy-brown), var(--white-smoke));
         box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         display: flex;
@@ -31,17 +30,17 @@
         gap: 10px;
       }
 
-      .logo {
-        width: 120px;
-        height: auto;
-        transition: transform 0.3s ease;
-      }
+.logo {
+  width: 120px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
 
-      .logo:hover {
-        transform: scale(1.05);
-      }
+.logo:hover {
+  transform: scale(1.05);
+}
+     
 
-   
 
       h1 {
   font-family: "Grandstander", cursive;
@@ -53,6 +52,11 @@
 }
 
 
+html, body {
+  min-height: 100vh;            /* fallback */
+  min-height: 100svh;           /* mobile safe (iOS chrome/safari) */
+}
+
       body {
         font-family: "Grandstander", sans-serif;
           background: linear-gradient(to bottom, var(--misty-rose), var(--white-smoke));
@@ -60,6 +64,7 @@
         margin: 0;
         padding: 0;
         text-align: center;
+  overflow-x: hidden;           /* avoid sideways scroll from hearts */
       }
 
     
@@ -78,8 +83,8 @@
         margin: 30px auto;
         border-radius: 16px;
         border: 4px solid var(--hookers-green);
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-        animation: float 3s ease-in-out infinite;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+        animation: float 2s ease-in-out infinite;
       }
 
       @keyframes float {
@@ -91,7 +96,7 @@
         display: flex;
         justify-content: center;
         gap: 20px;
-        margin-top: 30px;
+        margin: 30px;
         flex-wrap: wrap;
       }
 
@@ -127,9 +132,9 @@
         }
 
         .button {
-          width: 90%;
+          width: 80%;
           height: auto;
-          padding: 30px;
+
         }
       }
 

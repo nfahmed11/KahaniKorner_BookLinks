@@ -10,16 +10,55 @@
       href="https://fonts.googleapis.com/css2?family=Grandstander:wght@400;700&family=Authentic+Sans:wght@400;700&display=swap"
       rel="stylesheet" />
 
+
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
 
+
+       :root {
+        --primary: #1777af; /* Soft yellow */
+        --accent: #ffffff; /* White text or highlights */
+        --background: #fcefee; /* Light pastel pink */
+        --secondary-bg: #c151e7; /* Calming mint green */
+        --text-dark: #333333;
+        --correct: #4caf50;
+        --incorrect: #e74c3c;
+      }
+
+      
       body {
         font-family: "Quicksand", sans-serif;
         background: linear-gradient(135deg, #f9f7fe 0%, #e4f1fe 100%);
         min-height: 100vh;
       }
+
+       header {
+        width: 100%;
+        background: linear-gradient(
+          135deg,
+          var(--primary),
+          var(--secondary-bg)
+        );
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+.logo {
+  width: 120px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
 
       .mode-btn {
         transition: background-color 0.3s ease;
@@ -130,25 +169,24 @@
     </style>
   </head>
 
-  <body class="p-4 md:p-8">
-    <div class="flex flex-col items-center justify-center border-b p-4">
-      <img src="../../images/logo.png" alt="Logo" class="h-12 w-auto mb-2" />
-      <a
-        href="../index.html"
-        class="text-sm font-semibold text-[#7cccb7] hover:underline transition">
-        ← Back to Chuchu Chacha
+  <body>
+       <header>
+      <a href="https://kahanikorner.com/">
+        <img src="/quicklinks/images/logo.png" alt="Kahani Korner Logo" class="logo" />
       </a>
-    </div>
+    </header>
+
+    <div  class="p-4 md:p-8">
 
     <div class="max-w-3xl mx-auto">
-      <header class="text-center mb-8">
+      <div class="text-center mb-8">
         <h1 class="text-3xl md:text-4xl font-bold text-indigo-800 mb-2">
           Memory Game
         </h1>
         <p class="text-gray-600">
           Match Urdu words with their English translations
         </p>
-      </header>
+      </div>
 
       <div class="mb-6 bg-white p-4 rounded-lg shadow-md">
         <div class="flex justify-between items-center mb-2">
@@ -201,6 +239,8 @@
           Play Again
         </button>
       </div>
+    </div>
+
     </div>
 
     <script type="module">

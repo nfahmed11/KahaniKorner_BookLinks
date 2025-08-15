@@ -9,14 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Grandstander:wght@400;700&family=Authentic+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../SharedCode4Books/common.css">
+    <link rel="stylesheet" href="/SharedCode4Books/common.css">
     <style>
-      
-      .book-placeholder {
-
-        background-image: url("images/book-cover4.jpg");
-        
+     
+     
+  .book-placeholder {
+        background-image: url("images/bookcover.png");
       }
+    
     </style>
   </head>
   <body>
@@ -41,4 +41,22 @@
       </div>
     </div>
   </body>
+   <script>
+
+   // pink heart images from Icons8
+const iconSrc = "https://img.icons8.com/color/96/like--v1.png";
+
+
+for (let i = 0; i < 15; i++) {
+  const icon = document.createElement("img");
+  icon.src = iconSrc;
+  icon.classList.add("heart");
+  icon.style.left = Math.random() * 100 + "vw";
+  icon.style.animationDelay = Math.random() * 10 + "s";
+  icon.style.width = (16 + Math.random() * 10).toFixed(2) + "px";
+  icon.style.animationDuration = (6 + Math.random() * 4).toFixed(2) + "s";
+  document.body.appendChild(icon);
+}
+
+  </script>
 </html>
