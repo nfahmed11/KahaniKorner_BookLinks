@@ -318,7 +318,7 @@ export const riddles = [
       },
       hard: {
         romanUrdu:
-          "Log mujh se qurbani karte hain, main doodh deti hoon magar main gaayn nahi hoon, mere seengh chhoti ya baray ho sakte hain. Main kaun hoon?",
+          "Log mujh se qurbani karte hain, main doodh deti hoon magar main gaaye nahi hoon, mere seengh chhoti ya baray ho sakte hain. Main kaun hoon?",
         urdu: "لوگ مجھ سے قربانی کرتے ہیں، میں دودھ دیتی ہوں مگر میں گائے نہیں ہوں، میرے سینگھ چھوٹے یا بڑے ہو سکتے ہیں۔ میں کون ہوں؟",
         english:
           "People sacrifice me, I give milk, but I am not a cow. My horns can be big or small. Who am I?",
@@ -509,11 +509,11 @@ export const riddles = [
   },
   {
     word: {
-      romanUrdu: "Gaayn",
+      romanUrdu: "gaaye",
       urdu: "گائے",
       english: "Cow",
     },
-    image: "../images/gaayn.png",
+    image: "../images/gaaye.png",
     riddles: {
       easy: {
         romanUrdu:
